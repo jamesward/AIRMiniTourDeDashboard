@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/2.0">
+	<id>AIRMiniTourDeDashboard</id>
+	<filename>AIRMiniTourDeDashboard</filename>
+	<name>Tour de Flex Dashboard</name>
+	<version>1</version>
+	<supportedProfiles>mobileDevice</supportedProfiles>
+	<initialWindow>
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+		<visible>true</visible>
+		<autoOrients>true</autoOrients>
+	</initialWindow>
+	<icon>
+    <image16x16>icons/tdfx_16.png</image16x16>
+    <image32x32>icons/tdfx_32.png</image32x32>
+    <image48x48>icons/tdfx_48.png</image48x48>
+    <image128x128>icons/tdfx_128.png</image128x128>
+   </icon>
+</application>
