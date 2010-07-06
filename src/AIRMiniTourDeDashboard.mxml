@@ -141,19 +141,22 @@
   
   <mx:resize>
     <![CDATA[
-    if (height > width)
+    if (lastMinute != null)
     {
-      // display gauge
-      lastMinute.visible = true;
-      lastMinute.includeInLayout = true;
-      stage.displayState = StageDisplayState.NORMAL;
-    }
-    else
-    {
-      // hide gauge
-      lastMinute.visible = false;
-      lastMinute.includeInLayout = false;
-      stage.displayState = StageDisplayState.FULL_SCREEN;
+      if (height > width)
+      {
+        // display gauge
+        lastMinute.visible = true;
+        lastMinute.includeInLayout = true;
+        stage.displayState = StageDisplayState.NORMAL;
+      }
+      else
+      {
+        // hide gauge
+        lastMinute.visible = false;
+        lastMinute.includeInLayout = false;
+        stage.displayState = StageDisplayState.FULL_SCREEN;
+      }
     }
     ]]>
   </mx:resize>
