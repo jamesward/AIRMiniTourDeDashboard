@@ -136,12 +136,12 @@
         }
         
       }
-
     ]]>
   </mx:Script>
   
   <mx:resize>
-    if (stage.orientation == StageOrientation.DEFAULT)
+    <![CDATA[
+    if (height > width)
     {
       // display gauge
       lastMinute.visible = true;
@@ -155,6 +155,7 @@
       lastMinute.includeInLayout = false;
       stage.displayState = StageDisplayState.FULL_SCREEN;
     }
+    ]]>
   </mx:resize>
   
   <mx:deactivate>
